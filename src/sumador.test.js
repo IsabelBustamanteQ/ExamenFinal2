@@ -27,6 +27,13 @@ describe("Cambiar Dinero",()=>{
     expect(cambiarDinero(0.2)).toEqual("0.2, ");
   });
   
+  it("Se cambia un valor mayor a las monedas",()=>{
+    expect(cambiarDinero(10)).toEqual("5, 5, ");
+  });
+  
+  it("Se cambia un monto con varias monedas",()=>{
+    expect(cambiarDinero(7)).toEqual("5, 2, ");
+  });
   
 
 });
