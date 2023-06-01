@@ -22,7 +22,12 @@ function cambiarDinero(monto) {
                 monedas+="1, ";
                 monto-=1;
             }
-            
+            if(monto>=0.5)
+            {
+                monedas+="0.5, ";
+                monto-=0.5;
+            }
+
         }
         return monedas;
     }
