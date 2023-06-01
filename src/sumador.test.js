@@ -8,6 +8,10 @@ describe("restar", () => {
 describe("Cambiar Dinero",()=>{
   it("Si no se manda ningun valor, devuelve 0",()=>{
     expect(cambiarDinero()).toEqual("");
-  })
+  });
+  it("Se cambia un valor de moneda",()=>{
+    expect(cambiarDinero(5)).toEqual("5");
+  });
+  
 
 });
