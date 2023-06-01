@@ -1,36 +1,22 @@
 function cambiarDinero(monto) {
     let monedas="";
+    let cambios=[5,2,1,0.5,0.2];
     if(!monto){
         return "";
     }
     else
     {
-        while(monto>0)
+        var i=0;
+       while(monto>0&&i<5)
         {
-            if(monto>=5)
+            if(monto>=cambios[i])
             {
-                monedas+="5, ";
-                monto-=5;
-            }
-            else if(monto>=2)
-            {
-                monedas+="2, ";
-                monto-=2;
-            }
-            else if(monto>=1)
-            {
-                monedas+="1, ";
-                monto-=1;
-            }
-            else if(monto>=0.5)
-            {
-                monedas+="0.5, ";
-                monto-=0.5;
+                monedas+=cambios[i].toString()+", ";
+                monto-=cambios[i];
             }
             else
             {
-                monedas+="0.2, ";
-                monto-=0.2;
+                i++;
             }
         }
         return monedas;
