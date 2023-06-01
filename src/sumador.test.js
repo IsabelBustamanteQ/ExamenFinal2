@@ -10,8 +10,16 @@ describe("Cambiar Dinero",()=>{
     expect(cambiarDinero()).toEqual("");
   });
   it("Se cambia un valor de moneda",()=>{
-    expect(cambiarDinero(5)).toEqual("5");
+    expect(cambiarDinero(5)).toEqual("5, ");
   });
+  it("Se cambia un valor de moneda de 2",()=>{
+    expect(cambiarDinero(2)).toEqual("2, ");
+  });
+  it("Se cambia un valor de moneda de 1",()=>{
+    expect(cambiarDinero(1)).toEqual("1, ");
+  });
+  
+  
   
 
 });
