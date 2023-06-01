@@ -27,7 +27,11 @@ function cambiarDinero(monto) {
                 monedas+="0.5, ";
                 monto-=0.5;
             }
-
+            if(monto>=0.2)
+            {
+                monedas+="0.2, ";
+                monto-=0.2;
+            }
         }
         return monedas;
     }
