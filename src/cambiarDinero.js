@@ -12,25 +12,15 @@ function cambiarDinero(monto) {
                 monedas+="5, ";
                 monto-=5;
             }
-            if(monto>=2)
+            else if(monto>=2)
             {
                 monedas+="2, ";
                 monto-=2;
             }
-            if(monto>=1)
+            else if(monto>=1)
             {
                 monedas+="1, ";
                 monto-=1;
-            }
-            if(monto>=0.5)
-            {
-                monedas+="0.5, ";
-                monto-=0.5;
-            }
-            if(monto>=0.2)
-            {
-                monedas+="0.2, ";
-                monto-=0.2;
             }
         }
         return monedas;

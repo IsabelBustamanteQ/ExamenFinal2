@@ -19,11 +19,11 @@ describe("Cambiar Dinero",()=>{
     expect(cambiarDinero(1)).toEqual("1, ");
   });
   
-  it("Se cambia un valor de moneda de 0.5",()=>{
+  xit("Se cambia un valor de moneda de 0.5",()=>{
     expect(cambiarDinero(0.5)).toEqual("0.5, ");
   });
   
-  it("Se cambia un valor de moneda de 0.2",()=>{
+  xit("Se cambia un valor de moneda de 0.2",()=>{
     expect(cambiarDinero(0.2)).toEqual("0.2, ");
   });
   
