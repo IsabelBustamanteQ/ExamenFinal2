@@ -32,7 +32,7 @@ describe("Cambiar Dinero",()=>{
   });
   
   it("Se cambia un monto con varias monedas",()=>{
-    expect(cambiarDinero(7)).toEqual("5, 2, ");
+    expect(cambiarDinero(8)).toEqual("5, 2, 1, ");
   });
   
 
